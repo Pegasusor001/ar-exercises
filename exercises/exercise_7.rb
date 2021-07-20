@@ -11,8 +11,9 @@ puts "----------"
 
 # Your code goes here ...
 new_name = gets.chomp
-Store.create!(
+@store4 = Store.create!(
   name: new_name,
+  annual_revenue: 1000000
 )
-
+puts "store created #{@store4}"
 puts entry.errors.full_messages
